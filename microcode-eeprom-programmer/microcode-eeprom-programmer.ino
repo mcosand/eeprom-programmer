@@ -11,34 +11,20 @@
 #define LAST_ADDRESS_BIT 12
 #define CHIP_OFFSET (1 << LAST_ADDRESS_BIT)
 
-/* Data sheet is wrong!! Fix it in software!!
 #define CE  0b1000000000000000  // Program counter enable
 #define CO  0b0100000000000000  // Program counter out
 #define IO  0b0010000000000000  // Instruction register out
 #define II  0b0001000000000000  // Instruction register in
 #define RO  0b0000100000000000  // RAM data out
-*/
-#define CE  0b0000100000000000  // Program counter enable
-#define CO  0b0001000000000000  // Program counter out
-#define IO  0b0010000000000000  // Instruction register out
-#define II  0b0100000000000000  // Instruction register in
-#define RO  0b1000000000000000  // RAM data out
 #define RI  0b0000010000000000  // RAM data in
 #define MI  0b0000001000000000  // Memory address register in
 #define HLT 0b0000000100000000  // Halt clock
 
-/* Data sheet is wrong!! Fix it in software!!
 #define OI  0b0000000010000000  // Output register in
 #define OP  0b0000000001000000  // ALU subtract
 #define EO  0b0000000000100000  // ALU out
 #define BO  0b0000000000010000  // B register out
 #define BI  0b0000000000001000  // B register in
-*/
-#define OI  0b0000000000001000  // Output register in
-#define OP  0b0000000000010000  // ALU subtract
-#define EO  0b0000000000100000  // ALU out
-#define BO  0b0000000001000000  // B register out
-#define BI  0b0000000010000000  // B register in
 #define AO  0b0000000000000100  // A register out
 #define AI  0b0000000000000010  // A register in
 #define J   0b0000000000000001  // Jump (program counter in)
